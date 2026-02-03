@@ -17,7 +17,7 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: './resources/icons/icon.png',
+            src: '/icons/icon.png',
             sizes: '700x700',
             type: 'image/png'
           }
@@ -28,7 +28,7 @@ export default defineConfig({
 	},
 	screenshots: [
 		{
-			"src": "./resources/screenshots/screenshot.jpg",
+			"src": "/screenshots/screenshot.jpg",
 			"sizes": "1080x760",
 			"type": "image/jpeg",
 			"form_factor": "wide",
@@ -42,7 +42,10 @@ export default defineConfig({
 			"label": "Dashboard view displaying key metrics"
 		}
 	]
-      }
+      },
+	    devOptions: {
+		    enabled: true
+	    }
     })
   ],
   // ★重要：テンプレートとして使う時、ここはリポジトリ名に合わせて書き換える必要がある場所
