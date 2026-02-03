@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate', // 更新があったらすぐに新しいのを読み込む設定
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'], // キャッシュする静的ファイル
       manifest: {
-        name: 'My Awesome PWA',
-        short_name: 'PWA App',
-        description: 'React PWA Template',
+        name: 'Shikakeology Marksheet Reader',
+        short_name: 'Shikake OMR',
+        description: 'OMR for Shikake behavior experiments',
         theme_color: '#ffffff',
         icons: [
           {

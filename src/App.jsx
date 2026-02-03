@@ -662,14 +662,13 @@ const App = () => {
                     <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
                        <p className="text-sm text-slate-600">専用マークシートはこちらからダウンロードしてください。</p>
                        <a 
-                         href="./assets/実験シート240v2.pdf" 
-                         onClick={(e) => e.preventDefault()}
-                         className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-pink-300 hover:text-pink-600 transition-colors group"
+                         href="/実験シート240v2.pdf" 
+                         download="実験シート240v2.pdf"
+                         className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-lg hover:border-pink-300 hover:text-pink-600 transition-colors group cursor-pointer"
                        >
                           <span className="font-bold text-sm">📄 実験記録シート (Ver 2.0).pdf</span>
                           <Download className="w-4 h-4 text-slate-300 group-hover:text-pink-500" />
                        </a>
-                       <p className="text-xs text-slate-400 text-right">※ 現在準備中です（ダミーリンク）</p>
                     </div>
                   </section>
                 </div>
