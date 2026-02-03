@@ -17,7 +17,7 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/icons/icon.png',
+            src: 'icons/icon.png',
             sizes: '700x700',
             type: 'image/png'
           }
@@ -28,14 +28,14 @@ export default defineConfig({
 	},
 	screenshots: [
 		{
-			"src": "/screenshots/screenshot.jpg",
+			"src": "screenshots/screenshot.jpg",
 			"sizes": "1080x760",
 			"type": "image/jpeg",
 			"form_factor": "wide",
 			"label": "Home screen showing main navigation and featured content"
 		},
 		{
-			"src": "/screenshots/screenshot.jpg",
+			"src": "screenshots/screenshot.jpg",
 			"sizes": "1080x760",
 			"type": "image/jpeg",
 			"platform": "narrow",
