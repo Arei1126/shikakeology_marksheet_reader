@@ -35,7 +35,7 @@ export default defineConfig({
 			"label": "Home screen showing main navigation and featured content"
 		},
 		{
-			"src": "./resources/screenshots/screenshot.jpg",
+			"src": "/screenshots/screenshot.jpg",
 			"sizes": "1080x760",
 			"type": "image/jpeg",
 			"platform": "narrow",
