@@ -1,16 +1,63 @@
-# React + Vite
+## Shikakeology MarkSheet Reader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OpenCV.js を使用して、ブラウザ上で動作する高機能なマークシート読み取りWebアプリです。
+仕掛学に基づく行動観察データを効率的にデジタル化するために設計されています。
 
-Currently, two official plugins are available:
+## 特徴
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- クライアントサイド処理: 画像データをサーバーに送信せず、ブラウザ（OpenCV.js）ですべて完結するためセキュアで高速です。
 
-## React Compiler
+- ArUcoマーカー補正: 撮影された画像の歪みをArUcoマーカーを用いて自動的に補正し、正確な読み取りを実現します。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 階層的データ補完: 「使った」にチェックがあれば「立ち止まった」「気づいた」も自動でONにするなど、行動の包含関係を考慮したロジックを搭載しています。
 
-## Expanding the ESLint configuration
+- リアルタイムデバッグ: 読み取り時の閾値調整や、補正後の画像確認がその場で行えます。
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## デモ
+
+[アプリを開く](ここにGitHub PagesのURLを入れてください)
+
+## 使い方
+
+1. 準備: 下記のリンクから専用のマークシートをダウンロードし、印刷して使用してください。
+
+12. 撮影: 四隅のマーカーが収まるようにマークシートを撮影します。
+
+1. アップロード: アプリ上のエリアに画像をドラッグ＆ドロップします（複数枚可）。
+
+2. 解析: 解析ボタンを押すと処理が開始されます。
+
+1. 確認: デバッグビューで読み取りズレがないか確認し、必要に応じて閾値を調整します。
+
+1. 出力: CSV形式で結果をダウンロードします。
+
+## リソース
+
+[実験記録シート (PDF)]()
+
+
+## 技術スタック
+
+- React
+
+- Vite
+
+- Tailwind CSS
+
+- OpenCV.js
+
+- Lucide React
+
+## ローカルでの実行
+
+``` bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+```
+
+## ライセンス
+
+MIT
