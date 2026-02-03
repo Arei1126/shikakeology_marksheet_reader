@@ -15,7 +15,7 @@ OpenCV.js を使用して、ブラウザ上で動作する高機能なマーク�
 
 ## デモ
 
-[アプリを開く](htpps://Arei1126.github.io/shikakeology_marksheet_reader)
+[アプリを開く](https://arei1126.github.io/shikakeology_marksheet_reader/)
 
 ## 使い方
 
